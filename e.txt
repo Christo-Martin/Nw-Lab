@@ -1,0 +1,842 @@
+tech@programminlab-H610M-K-DDR4:~$ sudo tcpdump -A tcp
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on enp2s0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+15:46:39.121144 IP programminlab-H610M-K-DDR4.60644 > 192.168.0.108.7443: Flags [F.], seq 673593130, ack 4125199996, win 502, options [nop,nop,TS val 679922845 ecr 2003097], length 0
+E..4.r@.@...
+
+.=...l....(&7*...|...........
+(.......
+15:46:39.121256 IP programminlab-H610M-K-DDR4.60648 > 192.168.0.108.7443: Flags [S], seq 3506184483, win 64240, options [mss 1460,sackOK,TS val 679922846 ecr 0,nop,wscale 7], length 0
+E..<MH@.@.!.
+
+.=...l......!#...................
+(...........
+15:46:39.121555 IP 192.168.0.108.7443 > programminlab-H610M-K-DDR4.60648: Flags [S.], seq 1293870810, ack 3506184484, win 32768, options [mss 1400,sackOK,TS val 2004598 ecr 679922846,nop,wscale 5], length 0
+E..<..@.@.na...l
+
+.=....M.....!$....@......x...
+...v(.......
+15:46:39.121600 IP programminlab-H610M-K-DDR4.60648 > 192.168.0.108.7443: Flags [.], ack 1, win 502, options [nop,nop,TS val 679922846 ecr 2004598], length 0
+E..4MI@.@.! 
+
+.=...l......!$M..............
+(......v
+15:46:39.121705 IP programminlab-H610M-K-DDR4.60648 > 192.168.0.108.7443: Flags [P.], seq 1:224, ack 1, win 502, options [nop,nop,TS val 679922846 ecr 2004598], length 223
+E...MJ@.@. @
+
+.=...l......!$M........`.....
+(......vOPTIONS sip:nm SIP/2.0
+Via: SIP/2.0/TCP nm;branch=foo
+From: <sip:nm@nm>;tag=root
+To: <sip:nm2@nm2>
+Call-ID: 50000
+CSeq: 42 OPTIONS
+Max-Forwards: 70
+Content-Length: 0
+Contact: <sip:nm@nm>
+Accept: application/sdp
+
+
+15:46:39.121951 IP 192.168.0.108.7443 > programminlab-H610M-K-DDR4.60648: Flags [.], ack 224, win 1058, options [nop,nop,TS val 2004598 ecr 679922846], length 0
+E..4p.@.@......l
+
+.=....M....."....".......
+...v(...
+15:46:39.122692 IP 192.168.0.108.7443 > programminlab-H610M-K-DDR4.60648: Flags [P.], seq 1:2081, ack 224, win 1058, options [nop,nop,TS val 2004598 ecr 679922846], length 2080
+E..Tp.@.@......l
+
+.=....M....."....".......
+...v(...HTTP/1.0 400 Bad request: request-line invalid
+Content-type: text/html; charset="utf-8"
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Request denied by WatchGuard HTTP Proxy</title> 
+    <style type="text/css">
+      body {
+        font-family: Arial, Helvetica, Verdana, Sans-Serif;
+        font-size: small;            
+        font-weight: normal;            
+        color: #000000;
+      }
+      div {            
+        margin-left: auto;            
+        margin-right: auto;            
+        text-align: center;
+      }
+      .box {          
+        width: 600px;
+        background-color: #F2F2F2;            
+        border-left: solid 1px #C2C2C2;            
+        border-right: solid 1px #C2C2C2;            
+        vertical-align: middle;
+        padding: 20px 10px 20px 10px;
+      }
+      p {
+        text-align: left;
+      }
+      .red {
+        font-weight: bold;
+        color: Red;
+        text-align: center;
+      }
+      .band {            
+        height: 20px;
+        color: White;
+        background: #333333;
+        width: 600px;
+        border-left: solid 1px #333333;
+        border-right: solid 1px #333333;
+        padding: 3px 10px 0px 10px;
+      }
+      div#wrap {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body> 
+    <div id="wrap">
+      <div class="band"></div>
+      <div class="box" style="word-wrap:break-word;">
+        <p class="red">Request denied by NSSCE HTTP_GENERAL.1 Proxy.</p>
+        <p><b> Reason: </b> request-line invalid line='OPTIONS sip:nm SIP/2.0\x0d\x0a' </p>
+        <p>Please contact your administrator for assistance (9809604173)</p>
+        <p>More Details:</p>
+        <p><b>Method:</b> </p>
+        <p><b>Host:</b> 10.10.1.61:7443</p>
+        <p><b>Path:</b> </p> 
+      </div>
+      <div class="band">WatchGuard Technologies, Inc.</div>
+    </div>
+  
+</body>
+</html>
+15:46:39.122695 IP 192.168.0.108.7443 > programminlab-H610M-K-DDR4.60648: Flags [F.], seq 2081, ack 224, win 1058, options [nop,nop,TS val 2004598 ecr 679922846], length 0
+E..4p.@.@......l
+
+.=....M....."....".o.....
+...v(...
+15:46:39.122726 IP programminlab-H610M-K-DDR4.60648 > 192.168.0.108.7443: Flags [.], ack 2081, win 535, options [nop,nop,TS val 679922847 ecr 2004598], length 0
+E..4MK@.@.!.
+
+.=...l......".M..............
+(......v
+15:46:39.127058 IP programminlab-H610M-K-DDR4.60648 > 192.168.0.108.7443: Flags [F.], seq 224, ack 2082, win 535, options [nop,nop,TS val 679922851 ecr 2004598], length 0
+E..4ML@.@.!.
+
+.=...l......".M..............
+(......v
+15:46:39.127110 IP programminlab-H610M-K-DDR4.58196 > 192.168.0.108.8009: Flags [S], seq 1133254646, win 64240, options [mss 1460,sackOK,TS val 679922851 ecr 0,nop,wscale 7], length 0
+E..<./@.@..1
+
+.=...l.T.IC......................
+(...........
+15:46:39.127305 IP 192.168.0.108.7443 > programminlab-H610M-K-DDR4.60648: Flags [.], ack 225, win 1058, options [nop,nop,TS val 2004599 ecr 679922851], length 0
+E..4p.@.@......l
+
+.=....M....."....".h.....
+...w(...
+15:46:39.127422 IP 192.168.0.108.8009 > programminlab-H610M-K-DDR4.58196: Flags [S.], seq 3492634838, ack 1133254647, win 32768, options [mss 1400,sackOK,TS val 2004600 ecr 679922851,nop,wscale 5], length 0
+E..<..@.@.na...l
+
+.=.I.T.-`.C..............x...
+...x(.......
+15:46:39.127440 IP programminlab-H610M-K-DDR4.58196 > 192.168.0.108.8009: Flags [.], ack 1, win 502, options [nop,nop,TS val 679922852 ecr 2004600], length 0
+E..4.0@.@..8
+
+.=...l.T.IC....-`............
+(......x
+15:46:39.160711 IP 192.168.0.108.7443 > programminlab-H610M-K-DDR4.60644: Flags [.], ack 1, win 1024, options [nop,nop,TS val 2004610 ecr 679922845], length 0
+E..4..@.@.O....l
+
+.=.......|(&7+....,......
+....(...
+15:46:40.007551 IP 192.168.0.108.6789 > programminlab-H610M-K-DDR4.52088: Flags [R.], seq 1867144276, ack 1067429965, win 1024, options [nop,nop,TS val 2004864 ecr 679739259], length 0
+E..4..@.@..:...l
+
+.=...xoJ\T?..M....E7.....
+....(..{
+15:46:40.008237 IP 192.168.0.108.6547 > programminlab-H610M-K-DDR4.49386: Flags [R.], seq 2489510129, ack 121929866, win 1024, options [nop,nop,TS val 2004864 ecr 679739259], length 0
+E..4Q.@.@......l
+
+.=.....b...D....... .....
+....(..{
+15:46:40.008703 IP 192.168.0.108.6567 > programminlab-H610M-K-DDR4.46810: Flags [R.], seq 2347821826, ack 4123769275, win 1024, options [nop,nop,TS val 2004864 ecr 679739258], length 0
+E..4Rw@.@......l
+
+.=.......................
+....(..z
+15:46:40.009224 IP 192.168.0.108.6580 > programminlab-H610M-K-DDR4.48404: Flags [R.], seq 2090771548, ack 2926035536, win 1024, options [nop,nop,TS val 2004864 ecr 679739259], length 0
+E..4.-@.@.Q<...l
+
+.=....|..\.g.P....~D.....
+....(..{
+15:46:40.009844 IP 192.168.0.108.6543 > programminlab-H610M-K-DDR4.58860: Flags [R.], seq 3994440117, ack 1489375473, win 1024, options [nop,nop,TS val 2004864 ecr 679739239], length 0
+E..4..@.@......l
+
+.=......Q.X.......=......
+....(..g
+15:46:40.127720 IP programminlab-H610M-K-DDR4.57238 > 192.168.0.108.8007: Flags [P.], seq 1507238886:1507238904, ack 3805558118, win 502, options [nop,nop,TS val 679923852 ecr 2003099], length 18
+E..F.N@.@...
+
+.=...l...GY.....5f...........
+(.......GET / HTTP/1.0
+
+
+15:46:40.128423 IP 192.168.0.108.8007 > programminlab-H610M-K-DDR4.57238: Flags [.], ack 18, win 1024, options [nop,nop,TS val 2004900 ecr 679923852], length 0
+E..4..@.@..k...l
+
+.=.G....5fY..............
+....(...
+15:46:40.430266 IP programminlab-H610M-K-DDR4.46982 > 172.64.149.23.http: Flags [.], ack 4002244835, win 525, options [nop,nop,TS val 3605240289 ecr 2001919], length 0
+E..4..@.@.nR
+
+.=.@.....P......h.....L......
+........
+15:46:40.430534 IP 172.64.149.23.http > programminlab-H610M-K-DDR4.46982: Flags [.], ack 1, win 1058, options [nop,nop,TS val 2004990 ecr 3605158550], length 0
+E..4\.@.@..D.@..
+
+.=.P....h........".M.....
+......Z.
+15:46:41.606379 IP programminlab-H610M-K-DDR4.42940 > 192.168.0.108.7676: Flags [F.], seq 754222488, ack 2202435805, win 502, options [nop,nop,TS val 679925331 ecr 2003843], length 0
+E..4.~@.@...
+
+.=...l....,....F.............
+(..S....
+15:46:41.606471 IP programminlab-H610M-K-DDR4.42076 > 192.168.0.108.7676: Flags [S], seq 4157022631, win 64240, options [mss 1460,sackOK,TS val 679925331 ecr 0,nop,wscale 7], length 0
+E..<,.@.@.BV
+
+.=...l.\....!....................
+(..S........
+15:46:41.606496 IP programminlab-H610M-K-DDR4.35418 > 192.168.0.108.7625: Flags [F.], seq 2059888886, ack 2710104815, win 502, options [nop,nop,TS val 679925331 ecr 2003843], length 0
+E..4..@.@...
+
+.=...l.Z..z.h................
+(..S....
+15:46:41.606521 IP programminlab-H610M-K-DDR4.46058 > 192.168.0.108.7625: Flags [S], seq 1970642346, win 64240, options [mss 1460,sackOK,TS val 679925331 ecr 0,nop,wscale 7], length 0
+E..<.3@.@..-
+
+.=...l....uu.....................
+(..S........
+15:46:41.606535 IP programminlab-H610M-K-DDR4.58816 > 192.168.0.108.7512: Flags [F.], seq 1175600695, ack 3074901620, win 502, options [nop,nop,TS val 679925331 ecr 2003843], length 0
+E..4."@.@..F
+
+.=...l...XF.>7.GFt...........
+(..S....
+15:46:41.606556 IP programminlab-H610M-K-DDR4.38738 > 192.168.0.108.7512: Flags [S], seq 3501124747, win 64240, options [mss 1460,sackOK,TS val 679925331 ecr 0,nop,wscale 7], length 0
+E..<4&@.@.:;
+
+.=...l.R.X.......................
+(..S........
+15:46:41.606571 IP programminlab-H610M-K-DDR4.56258 > 192.168.0.108.7627: Flags [F.], seq 933411033, ack 1930655252, win 502, options [nop,nop,TS val 679925331 ecr 2003843], length 0
+E..4..@.@.Y.
+
+.=...l....7...s.v............
+(..S....
+15:46:41.606591 IP programminlab-H610M-K-DDR4.53496 > 192.168.0.108.7627: Flags [S], seq 3948927485, win 64240, options [mss 1460,sackOK,TS val 679925331 ecr 0,nop,wscale 7], length 0
+E..<.2@.@...
+
+.=...l....._.....................
+(..S........
+15:46:41.606605 IP programminlab-H610M-K-DDR4.52316 > 192.168.0.108.7496: Flags [F.], seq 4273763592, ack 2797217792, win 502, options [nop,nop,TS val 679925331 ecr 2003843], length 0
+E..4/W@.@.?.
+
+.=...l.\.H..u...(............
+(..S....
+15:46:41.606627 IP programminlab-H610M-K-DDR4.36426 > 192.168.0.108.7496: Flags [S], seq 35375702, win 64240, options [mss 1460,sackOK,TS val 679925331 ecr 0,nop,wscale 7], length 0
+E..<..@.@...
+
+.=...l.J.H...V...................
+(..S........
+15:46:41.606992 IP 192.168.0.108.7676 > programminlab-H610M-K-DDR4.42076: Flags [S.], seq 1534557307, ack 4157022632, win 32768, options [mss 1400,sackOK,TS val 2005343 ecr 679925331,nop,wscale 5], length 0
+E..<..@.@.na...l
+
+.=...\[w|{..!............x...
+..._(..S....
+15:46:41.606996 IP 192.168.0.108.7625 > programminlab-H610M-K-DDR4.46058: Flags [S.], seq 3158174709, ack 1970642347, win 32768, options [mss 1400,sackOK,TS val 2005343 ecr 679925331,nop,wscale 5], length 0
+E..<..@.@.na...l
+
+.=.....=..uu.......r.....x...
+..._(..S....
+15:46:41.606997 IP 192.168.0.108.7512 > programminlab-H610M-K-DDR4.38738: Flags [S.], seq 2543673377, ack 3501124748, win 32768, options [mss 1400,sackOK,TS val 2005343 ecr 679925331,nop,wscale 5], length 0
+E..<..@.@.na...l
+
+.=.X.R..`!...............x...
+..._(..S....
+15:46:41.606998 IP 192.168.0.108.7627 > programminlab-H610M-K-DDR4.53496: Flags [S.], seq 1860538099, ack 3948927486, win 32768, options [mss 1400,sackOK,TS val 2005343 ecr 679925331,nop,wscale 5], length 0
+E..<..@.@.na...l
+
+.=....n...._.............x...
+..._(..S....
+15:46:41.606998 IP 192.168.0.108.7496 > programminlab-H610M-K-DDR4.36426: Flags [S.], seq 2993958219, ack 35375703, win 32768, options [mss 1400,sackOK,TS val 2005343 ecr 679925331,nop,wscale 5], length 0
+E..<..@.@.na...l
+
+.=.H.J.t-K...W...........x...
+..._(..S....
+15:46:41.607058 IP programminlab-H610M-K-DDR4.42076 > 192.168.0.108.7676: Flags [.], ack 1, win 502, options [nop,nop,TS val 679925331 ecr 2005343], length 0
+E..4,.@.@.B]
+
+.=...l.\....!.[w||...........
+(..S..._
+15:46:41.607072 IP programminlab-H610M-K-DDR4.46058 > 192.168.0.108.7625: Flags [.], ack 1, win 502, options [nop,nop,TS val 679925331 ecr 2005343], length 0
+E..4.4@.@..4
+
+.=...l....uu...=.............
+(..S..._
+15:46:41.607080 IP programminlab-H610M-K-DDR4.42076 > 192.168.0.108.7676: Flags [P.], seq 1:15, ack 1, win 502, options [nop,nop,TS val 679925331 ecr 2005343], length 14
+E..B,.@.@.BN
+
+.=...l.\....!.[w||...........
+(..S..._0....`........
+15:46:41.607084 IP programminlab-H610M-K-DDR4.38738 > 192.168.0.108.7512: Flags [.], ack 1, win 502, options [nop,nop,TS val 679925331 ecr 2005343], length 0
+E..44'@.@.:B
+
+.=...l.R.X......`"...........
+(..S..._
+15:46:41.607087 IP programminlab-H610M-K-DDR4.53496 > 192.168.0.108.7627: Flags [.], ack 1, win 502, options [nop,nop,TS val 679925331 ecr 2005343], length 0
+E..4.3@.@..5
+
+.=...l....._..n..............
+(..S..._
+15:46:41.607095 IP programminlab-H610M-K-DDR4.36426 > 192.168.0.108.7496: Flags [.], ack 1, win 502, options [nop,nop,TS val 679925331 ecr 2005343], length 0
+E..4..@.@...
+
+.=...l.J.H...W.t-L...........
+(..S..._
+15:46:41.607121 IP programminlab-H610M-K-DDR4.46058 > 192.168.0.108.7625: Flags [P.], seq 1:224, ack 1, win 502, options [nop,nop,TS val 679925331 ecr 2005343], length 223
+E....5@.@..T
+
+.=...l....uu...=.......`.....
+(..S..._OPTIONS sip:nm SIP/2.0
+Via: SIP/2.0/TCP nm;branch=foo
+From: <sip:nm@nm>;tag=root
+To: <sip:nm2@nm2>
+Call-ID: 50000
+CSeq: 42 OPTIONS
+Max-Forwards: 70
+Content-Length: 0
+Contact: <sip:nm@nm>
+Accept: application/sdp
+
+
+15:46:41.607139 IP programminlab-H610M-K-DDR4.38738 > 192.168.0.108.7512: Flags [P.], seq 1:224, ack 1, win 502, options [nop,nop,TS val 679925331 ecr 2005343], length 223
+E...4(@.@.9b
+
+.=...l.R.X......`".....`.....
+(..S..._OPTIONS sip:nm SIP/2.0
+Via: SIP/2.0/TCP nm;branch=foo
+From: <sip:nm@nm>;tag=root
+To: <sip:nm2@nm2>
+Call-ID: 50000
+CSeq: 42 OPTIONS
+Max-Forwards: 70
+Content-Length: 0
+Contact: <sip:nm@nm>
+Accept: application/sdp
+
+
+15:46:41.607156 IP programminlab-H610M-K-DDR4.53496 > 192.168.0.108.7627: Flags [P.], seq 1:224, ack 1, win 502, options [nop,nop,TS val 679925331 ecr 2005343], length 223
+E....4@.@..U
+
+.=...l....._..n........`.....
+(..S..._OPTIONS sip:nm SIP/2.0
+Via: SIP/2.0/TCP nm;branch=foo
+From: <sip:nm@nm>;tag=root
+To: <sip:nm2@nm2>
+Call-ID: 50000
+CSeq: 42 OPTIONS
+Max-Forwards: 70
+Content-Length: 0
+Contact: <sip:nm@nm>
+Accept: application/sdp
+
+
+15:46:41.607174 IP programminlab-H610M-K-DDR4.36426 > 192.168.0.108.7496: Flags [P.], seq 1:224, ack 1, win 502, options [nop,nop,TS val 679925331 ecr 2005343], length 223
+E.....@.@...
+
+.=...l.J.H...W.t-L.....`.....
+(..S..._OPTIONS sip:nm SIP/2.0
+Via: SIP/2.0/TCP nm;branch=foo
+From: <sip:nm@nm>;tag=root
+To: <sip:nm2@nm2>
+Call-ID: 50000
+CSeq: 42 OPTIONS
+Max-Forwards: 70
+Content-Length: 0
+Contact: <sip:nm@nm>
+Accept: application/sdp
+
+
+15:46:41.608010 IP 192.168.0.108.7676 > programminlab-H610M-K-DDR4.42076: Flags [.], ack 15, win 1024, options [nop,nop,TS val 2005343 ecr 679925331], length 0
+E..4.#@.@..E...l
+
+.=...\[w||..!.....Z@.....
+..._(..S
+15:46:41.608011 IP 192.168.0.108.7625 > programminlab-H610M-K-DDR4.46058: Flags [.], ack 224, win 1058, options [nop,nop,TS val 2005343 ecr 679925331], length 0
+E..4r.@.@......l
+
+.=.....=..uu.....".......
+..._(..S
+15:46:41.608012 IP 192.168.0.108.7512 > programminlab-H610M-K-DDR4.38738: Flags [.], ack 224, win 1058, options [nop,nop,TS val 2005343 ecr 679925331], length 0
+E..4.}@.@.t....l
+
+.=.X.R..`"...k...".c.....
+..._(..S
+15:46:41.608012 IP 192.168.0.108.7627 > programminlab-H610M-K-DDR4.53496: Flags [.], ack 224, win 1058, options [nop,nop,TS val 2005343 ecr 679925331], length 0
+E..4..@.@.V....l
+
+.=....n...._....."[......
+..._(..S
+15:46:41.608051 IP 192.168.0.108.7496 > programminlab-H610M-K-DDR4.36426: Flags [.], ack 224, win 1058, options [nop,nop,TS val 2005343 ecr 679925331], length 0
+E..4..@.@..U...l
+
+.=.H.J.t-L...6...".C.....
+..._(..S
+15:46:41.611797 IP 192.168.0.108.7625 > programminlab-H610M-K-DDR4.46058: Flags [P.], seq 1:2081, ack 224, win 1058, options [nop,nop,TS val 2005345 ecr 679925331], length 2080
+E..Tr.@.@......l
+
+.=.....=..uu.....".......
+...a(..SHTTP/1.0 400 Bad request: request-line invalid
+Content-type: text/html; charset="utf-8"
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Request denied by WatchGuard HTTP Proxy</title> 
+    <style type="text/css">
+      body {
+        font-family: Arial, Helvetica, Verdana, Sans-Serif;
+        font-size: small;            
+        font-weight: normal;            
+        color: #000000;
+      }
+      div {            
+        margin-left: auto;            
+        margin-right: auto;            
+        text-align: center;
+      }
+      .box {          
+        width: 600px;
+        background-color: #F2F2F2;            
+        border-left: solid 1px #C2C2C2;            
+        border-right: solid 1px #C2C2C2;            
+        vertical-align: middle;
+        padding: 20px 10px 20px 10px;
+      }
+      p {
+        text-align: left;
+      }
+      .red {
+        font-weight: bold;
+        color: Red;
+        text-align: center;
+      }
+      .band {            
+        height: 20px;
+        color: White;
+        background: #333333;
+        width: 600px;
+        border-left: solid 1px #333333;
+        border-right: solid 1px #333333;
+        padding: 3px 10px 0px 10px;
+      }
+      div#wrap {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body> 
+    <div id="wrap">
+      <div class="band"></div>
+      <div class="box" style="word-wrap:break-word;">
+        <p class="red">Request denied by NSSCE HTTP_GENERAL.1 Proxy.</p>
+        <p><b> Reason: </b> request-line invalid line='OPTIONS sip:nm SIP/2.0\x0d\x0a' </p>
+        <p>Please contact your administrator for assistance (9809604173)</p>
+        <p>More Details:</p>
+        <p><b>Method:</b> </p>
+        <p><b>Host:</b> 10.10.1.61:7625</p>
+        <p><b>Path:</b> </p> 
+      </div>
+      <div class="band">WatchGuard Technologies, Inc.</div>
+    </div>
+  
+</body>
+</html>
+15:46:41.611798 IP 192.168.0.108.7625 > programminlab-H610M-K-DDR4.46058: Flags [F.], seq 2081, ack 224, win 1058, options [nop,nop,TS val 2005345 ecr 679925331], length 0
+E..4r.@.@......l
+
+.=.....=..uu....."w......
+...a(..S
+15:46:41.611810 IP programminlab-H610M-K-DDR4.46058 > 192.168.0.108.7625: Flags [.], ack 2081, win 535, options [nop,nop,TS val 679925336 ecr 2005345], length 0
+E..4.6@.@..2
+
+.=...l....uu...=.............
+(..X...a
+15:46:41.613024 IP 192.168.0.108.7627 > programminlab-H610M-K-DDR4.53496: Flags [P.], seq 1:2081, ack 224, win 1058, options [nop,nop,TS val 2005345 ecr 679925331], length 2080
+E..T..@.@.N....l
+
+.=....n...._.....".......
+...a(..SHTTP/1.0 400 Bad request: request-line invalid
+Content-type: text/html; charset="utf-8"
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Request denied by WatchGuard HTTP Proxy</title> 
+    <style type="text/css">
+      body {
+        font-family: Arial, Helvetica, Verdana, Sans-Serif;
+        font-size: small;            
+        font-weight: normal;            
+        color: #000000;
+      }
+      div {            
+        margin-left: auto;            
+        margin-right: auto;            
+        text-align: center;
+      }
+      .box {          
+        width: 600px;
+        background-color: #F2F2F2;            
+        border-left: solid 1px #C2C2C2;            
+        border-right: solid 1px #C2C2C2;            
+        vertical-align: middle;
+        padding: 20px 10px 20px 10px;
+      }
+      p {
+        text-align: left;
+      }
+      .red {
+        font-weight: bold;
+        color: Red;
+        text-align: center;
+      }
+      .band {            
+        height: 20px;
+        color: White;
+        background: #333333;
+        width: 600px;
+        border-left: solid 1px #333333;
+        border-right: solid 1px #333333;
+        padding: 3px 10px 0px 10px;
+      }
+      div#wrap {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body> 
+    <div id="wrap">
+      <div class="band"></div>
+      <div class="box" style="word-wrap:break-word;">
+        <p class="red">Request denied by NSSCE HTTP_GENERAL.1 Proxy.</p>
+        <p><b> Reason: </b> request-line invalid line='OPTIONS sip:nm SIP/2.0\x0d\x0a' </p>
+        <p>Please contact your administrator for assistance (9809604173)</p>
+        <p>More Details:</p>
+        <p><b>Method:</b> </p>
+        <p><b>Host:</b> 10.10.1.61:7627</p>
+        <p><b>Path:</b> </p> 
+      </div>
+      <div class="band">WatchGuard Technologies, Inc.</div>
+    </div>
+  
+</body>
+</html>
+15:46:41.613029 IP programminlab-H610M-K-DDR4.53496 > 192.168.0.108.7627: Flags [.], ack 2081, win 535, options [nop,nop,TS val 679925337 ecr 2005345], length 0
+E..4.5@.@..3
+
+.=...l....._..n..............
+(..Y...a
+15:46:41.613137 IP 192.168.0.108.7512 > programminlab-H610M-K-DDR4.38738: Flags [P.], seq 1:2081, ack 224, win 1058, options [nop,nop,TS val 2005345 ecr 679925331], length 2080
+E..T.~@.@.l....l
+
+.=.X.R..`"...k...".......
+...a(..SHTTP/1.0 400 Bad request: request-line invalid
+Content-type: text/html; charset="utf-8"
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Request denied by WatchGuard HTTP Proxy</title> 
+    <style type="text/css">
+      body {
+        font-family: Arial, Helvetica, Verdana, Sans-Serif;
+        font-size: small;            
+        font-weight: normal;            
+        color: #000000;
+      }
+      div {            
+        margin-left: auto;            
+        margin-right: auto;            
+        text-align: center;
+      }
+      .box {          
+        width: 600px;
+        background-color: #F2F2F2;            
+        border-left: solid 1px #C2C2C2;            
+        border-right: solid 1px #C2C2C2;            
+        vertical-align: middle;
+        padding: 20px 10px 20px 10px;
+      }
+      p {
+        text-align: left;
+      }
+      .red {
+        font-weight: bold;
+        color: Red;
+        text-align: center;
+      }
+      .band {            
+        height: 20px;
+        color: White;
+        background: #333333;
+        width: 600px;
+        border-left: solid 1px #333333;
+        border-right: solid 1px #333333;
+        padding: 3px 10px 0px 10px;
+      }
+      div#wrap {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body> 
+    <div id="wrap">
+      <div class="band"></div>
+      <div class="box" style="word-wrap:break-word;">
+        <p class="red">Request denied by NSSCE HTTP_GENERAL.1 Proxy.</p>
+        <p><b> Reason: </b> request-line invalid line='OPTIONS sip:nm SIP/2.0\x0d\x0a' </p>
+        <p>Please contact your administrator for assistance (9809604173)</p>
+        <p>More Details:</p>
+        <p><b>Method:</b> </p>
+        <p><b>Host:</b> 10.10.1.61:7512</p>
+        <p><b>Path:</b> </p> 
+      </div>
+      <div class="band">WatchGuard Technologies, Inc.</div>
+    </div>
+  
+</body>
+</html>
+15:46:41.613138 IP 192.168.0.108.7512 > programminlab-H610M-K-DDR4.38738: Flags [F.], seq 2081, ack 224, win 1058, options [nop,nop,TS val 2005345 ecr 679925331], length 0
+E..4..@.@.t....l
+
+.=.X.R..hB...k...".@.....
+...a(..S
+15:46:41.613142 IP programminlab-H610M-K-DDR4.38738 > 192.168.0.108.7512: Flags [.], ack 2081, win 535, options [nop,nop,TS val 679925337 ecr 2005345], length 0
+E..44)@.@.:@
+
+.=...l.R.X...k..hB...........
+(..Y...a
+15:46:41.613574 IP 192.168.0.108.7627 > programminlab-H610M-K-DDR4.53496: Flags [F.], seq 2081, ack 224, win 1058, options [nop,nop,TS val 2005345 ecr 679925337], length 0
+E..4..@.@.V....l
+
+.=....n...._....."R......
+...a(..Y
+15:46:41.614699 IP 192.168.0.108.7496 > programminlab-H610M-K-DDR4.36426: Flags [P.], seq 1:2081, ack 224, win 1058, options [nop,nop,TS val 2005346 ecr 679925331], length 2080
+E..T..@.@..4...l
+
+.=.H.J.t-L...6...".......
+...b(..SHTTP/1.0 400 Bad request: request-line invalid
+Content-type: text/html; charset="utf-8"
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Request denied by WatchGuard HTTP Proxy</title> 
+    <style type="text/css">
+      body {
+        font-family: Arial, Helvetica, Verdana, Sans-Serif;
+        font-size: small;            
+        font-weight: normal;            
+        color: #000000;
+      }
+      div {            
+        margin-left: auto;            
+        margin-right: auto;            
+        text-align: center;
+      }
+      .box {          
+        width: 600px;
+        background-color: #F2F2F2;            
+        border-left: solid 1px #C2C2C2;            
+        border-right: solid 1px #C2C2C2;            
+        vertical-align: middle;
+        padding: 20px 10px 20px 10px;
+      }
+      p {
+        text-align: left;
+      }
+      .red {
+        font-weight: bold;
+        color: Red;
+        text-align: center;
+      }
+      .band {            
+        height: 20px;
+        color: White;
+        background: #333333;
+        width: 600px;
+        border-left: solid 1px #333333;
+        border-right: solid 1px #333333;
+        padding: 3px 10px 0px 10px;
+      }
+      div#wrap {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body> 
+    <div id="wrap">
+      <div class="band"></div>
+      <div class="box" style="word-wrap:break-word;">
+        <p class="red">Request denied by NSSCE HTTP_GENERAL.1 Proxy.</p>
+        <p><b> Reason: </b> request-line invalid line='OPTIONS sip:nm SIP/2.0\x0d\x0a' </p>
+        <p>Please contact your administrator for assistance (9809604173)</p>
+        <p>More Details:</p>
+        <p><b>Method:</b> </p>
+        <p><b>Host:</b> 10.10.1.61:7496</p>
+        <p><b>Path:</b> </p> 
+      </div>
+      <div class="band">WatchGuard Technologies, Inc.</div>
+    </div>
+  
+</body>
+</html>
+15:46:41.614700 IP 192.168.0.108.7496 > programminlab-H610M-K-DDR4.36426: Flags [F.], seq 2081, ack 224, win 1058, options [nop,nop,TS val 2005346 ecr 679925331], length 0
+E..4..@.@..R...l
+
+.=.H.J.t5l...6...".......
+...b(..S
+15:46:41.614705 IP programminlab-H610M-K-DDR4.36426 > 192.168.0.108.7496: Flags [.], ack 2081, win 535, options [nop,nop,TS val 679925339 ecr 2005346], length 0
+E..4..@.@...
+
+.=...l.J.H...6.t5l...........
+(..[...b
+15:46:41.617391 IP programminlab-H610M-K-DDR4.46058 > 192.168.0.108.7625: Flags [F.], seq 224, ack 2082, win 535, options [nop,nop,TS val 679925342 ecr 2005345], length 0
+E..4.7@.@..1
+
+.=...l....uu...=.............
+(..^...a
+15:46:41.617470 IP programminlab-H610M-K-DDR4.58664 > 192.168.0.108.zope-ftp: Flags [S], seq 4165260724, win 64240, options [mss 1460,sackOK,TS val 679925342 ecr 0,nop,wscale 7], length 0
+E..<e.@.@...
+
+.=...l.(.U.D.....................
+(..^........
+15:46:41.617532 IP 192.168.0.108.7625 > programminlab-H610M-K-DDR4.46058: Flags [.], ack 225, win 1058, options [nop,nop,TS val 2005347 ecr 679925342], length 0
+E..4r.@.@......l
+
+.=.....=..uu....."w......
+...c(..^
+15:46:41.617715 IP 192.168.0.108.zope-ftp > programminlab-H610M-K-DDR4.58664: Flags [S.], seq 4217679357, ack 4165260725, win 32768, options [mss 1400,sackOK,TS val 2005347 ecr 679925342,nop,wscale 5], length 0
+E..<..@.@.na...l
+
+.=.U.(.d...D.............x...
+...c(..^....
+15:46:41.617724 IP programminlab-H610M-K-DDR4.58664 > 192.168.0.108.zope-ftp: Flags [.], ack 1, win 502, options [nop,nop,TS val 679925342 ecr 2005347], length 0
+E..4e.@.@...
+
+.=...l.(.U.D...d.............
+(..^...c
+15:46:41.622823 IP programminlab-H610M-K-DDR4.53496 > 192.168.0.108.7627: Flags [F.], seq 224, ack 2082, win 535, options [nop,nop,TS val 679925347 ecr 2005345], length 0
+E..4.6@.@..2
+
+.=...l....._..n..............
+(..c...a
+15:46:41.622858 IP programminlab-H610M-K-DDR4.59558 > 192.168.0.108.8022: Flags [S], seq 4287481734, win 64240, options [mss 1460,sackOK,TS val 679925347 ecr 0,nop,wscale 7], length 0
+E..<.?@.@..!
+
+.=...l...V.......................
+(..c........
+15:46:41.622934 IP 192.168.0.108.7627 > programminlab-H610M-K-DDR4.53496: Flags [.], ack 225, win 1058, options [nop,nop,TS val 2005348 ecr 679925347], length 0
+E..4..@.@.V....l
+
+.=....n...._....."R......
+...d(..c
+15:46:41.623134 IP 192.168.0.108.8022 > programminlab-H610M-K-DDR4.59558: Flags [S.], seq 765477807, ack 4287481735, win 32768, options [mss 1400,sackOK,TS val 2005348 ecr 679925347,nop,wscale 5], length 0
+E..<..@.@.na...l
+
+.=.V..-.C.........#......x...
+...d(..c....
+15:46:41.623141 IP programminlab-H610M-K-DDR4.59558 > 192.168.0.108.8022: Flags [.], ack 1, win 502, options [nop,nop,TS val 679925347 ecr 2005348], length 0
+E..4.@@.@..(
+
+.=...l...V....-.C............
+(..c...d
+15:46:41.627042 IP programminlab-H610M-K-DDR4.38738 > 192.168.0.108.7512: Flags [F.], seq 224, ack 2082, win 535, options [nop,nop,TS val 679925351 ecr 2005345], length 0
+E..44*@.@.:?
+
+.=...l.R.X...k..hC...........
+(..g...a
+15:46:41.627062 IP programminlab-H610M-K-DDR4.40172 > 192.168.0.108.8031: Flags [S], seq 2062186470, win 64240, options [mss 1460,sackOK,TS val 679925351 ecr 0,nop,wscale 7], length 0
+E..<f.@.@...
+
+.=...l..._z.w....................
+(..g........
+15:46:41.627224 IP 192.168.0.108.7512 > programminlab-H610M-K-DDR4.38738: Flags [.], ack 225, win 1058, options [nop,nop,TS val 2005349 ecr 679925351], length 0
+E..4..@.@.t....l
+
+.=.X.R..hC...l...".'.....
+...e(..g
+15:46:41.627401 IP 192.168.0.108.8031 > programminlab-H610M-K-DDR4.40172: Flags [S.], seq 4004431653, ack 2062186471, win 32768, options [mss 1400,sackOK,TS val 2005349 ecr 679925351,nop,wscale 5], length 0
+E..<..@.@.na...l
+
+.=._.....%z.w......n.....x...
+...e(..g....
+15:46:41.627405 IP programminlab-H610M-K-DDR4.40172 > 192.168.0.108.8031: Flags [.], ack 1, win 502, options [nop,nop,TS val 679925352 ecr 2005349], length 0
+E..4f.@.@...
+
+.=...l..._z.w....&...........
+(..h...e
+15:46:41.629750 IP programminlab-H610M-K-DDR4.36426 > 192.168.0.108.7496: Flags [F.], seq 224, ack 2082, win 535, options [nop,nop,TS val 679925354 ecr 2005346], length 0
+E..4..@.@...
+
+.=...l.J.H...6.t5m...........
+(..j...b
+15:46:41.629762 IP programminlab-H610M-K-DDR4.47494 > 192.168.0.108.8045: Flags [S], seq 130250811, win 64240, options [mss 1460,sackOK,TS val 679925354 ecr 0,nop,wscale 7], length 0
+E..<."@.@..>
+
+.=...l...m..x;...................
+(..j........
+15:46:41.629891 IP 192.168.0.108.7496 > programminlab-H610M-K-DDR4.36426: Flags [.], ack 225, win 1058, options [nop,nop,TS val 2005350 ecr 679925354], length 0
+E..4..@.@..Q...l
+
+.=.H.J.t5m...7...".......
+...f(..j
+15:46:41.630129 IP 192.168.0.108.8045 > programminlab-H610M-K-DDR4.47494: Flags [S.], seq 351933697, ack 130250812, win 32768, options [mss 1400,sackOK,TS val 2005350 ecr 679925354,nop,wscale 5], length 0
+E..<..@.@.na...l
+
+.=.m........x<.....n.....x...
+...f(..j....
+15:46:41.630133 IP programminlab-H610M-K-DDR4.47494 > 192.168.0.108.8045: Flags [.], ack 1, win 502, options [nop,nop,TS val 679925354 ecr 2005350], length 0
+E..4.#@.@..E
+
+.=...l...m..x<...............
+(..j...f
+15:46:41.644136 IP 192.168.0.108.7676 > programminlab-H610M-K-DDR4.42940: Flags [.], ack 1, win 1024, options [nop,nop,TS val 2005355 ecr 679925331], length 0
+E..4._@.@.[
+...l
+
+.=.....F..,..............
+...k(..S
+15:46:41.644137 IP 192.168.0.108.7512 > programminlab-H610M-K-DDR4.58816: Flags [.], ack 1, win 1024, options [nop,nop,TS val 2005355 ecr 679925331], length 0
+E..4..@.@..p...l
+
+.=.X...GFtF.>8...........
+...k(..S
+15:46:41.644138 IP 192.168.0.108.7625 > programminlab-H610M-K-DDR4.35418: Flags [.], ack 1, win 1024, options [nop,nop,TS val 2005355 ecr 679925331], length 0
+E..4ym@.@......l
+
+.=...Z....z.h............
+...k(..S
+15:46:41.644138 IP 192.168.0.108.7496 > programminlab-H610M-K-DDR4.52316: Flags [.], ack 1, win 1024, options [nop,nop,TS val 2005355 ecr 679925331], length 0
+E..4..@.@......l
+
+.=.H.\..(...u	...........
+...k(..S
+15:46:41.644139 IP 192.168.0.108.7627 > programminlab-H610M-K-DDR4.56258: Flags [.], ack 1, win 1024, options [nop,nop,TS val 2005355 ecr 679925331], length 0
+E..4..@.@......l
+
+.=....s.v.7.......:......
+...k(..S
+
