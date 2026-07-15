@@ -1,0 +1,11 @@
+Query packet number: 6683
+Query transport (UDP/TCP): UDP
+Response packet number: 6874
+Response transport (UDP/TCP):UDP
+Query source port / destination port: 51481/53
+Response source port / destination port: 53/51481
+Destination IP of query (resolver): 4.2.2.2
+Query Transaction ID: 0xee3d
+Response Transaction ID:  0xee3d
+Query: QDCOUNT / ANCOUNT /NSCOUNT / ARCOUNT: 1001
+Response: QDCOUNT / ANCOUNT /NSCOUNT / ARCOUNT: 1201
