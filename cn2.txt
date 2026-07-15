@@ -1,0 +1,15 @@
+Source IP (GET) :10.10.1.103
+Destination IP (GET): 172.67.132.115
+Accept (medium format): text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\n
+Accept-Language: en-US,en;q=0.9\r\n
+Accept-Encoding: gzip, deflate\r\n
+Accept-Charset: UTF8
+Request URL: httpforever.com\r\n
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0\r\n
+Source IP (Response) : 172.67.132.115
+Destination IP (Response) : 10.10.1.103
+Status Code: 200
+Last-Modified: Wed, 01 Jul 2026 19:39:17 GMT\r\n
+Content-Length [Length: 3713]
+Response Time (Response ts − GET ts): [Time since request: 0.527709562 seconds]
+HTTP Version Response Version: HTTP/1.1
